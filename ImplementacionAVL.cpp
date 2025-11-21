@@ -71,14 +71,14 @@ static NodoAVL* rotacionIzquierda(NodoAVL* x) {
     return y;
 }
 
-// --- Inserción AVL ---
+// --- Insercion AVL ---
 
 // Inserta recursivamente un NodoCancion en el AVL y mantiene el balance
 NodoAVL* insertarAVL(NodoAVL* raiz, NodoCancion* nuevaCancion) {
-    // Paso 1: Inserción normal de BST (alcanzar una hoja)
+    // Inserción normal de BST (alcanzar una hoja)
     if (!raiz) return crearNodoAVL(nuevaCancion);
 
-    // Usamos el título para la comparación
+    // Usamos el título para la comparacion
     int cmp = strcmp(nuevaCancion->titulo, raiz->datosCancion->titulo);
     
     if (cmp < 0) {
@@ -91,13 +91,13 @@ NodoAVL* insertarAVL(NodoAVL* raiz, NodoCancion* nuevaCancion) {
         return raiz; // No insertar duplicados
     }
 
-    // Paso 2: Actualizar altura del nodo actual
+    //Actualizar altura del nodo actual
     raiz->altura = 1 + max(altura(raiz->izq), altura(raiz->der));
 
-    // Paso 3: Obtener factor de balance
+    //Obtener factor de balance
     int balance = getBalance(raiz);
 
-    // Paso 4: Casos de Desbalance (Rotaciones)
+    //Casos de Desbalance (Rotaciones)
     
     // Caso Izquierda-Izquierda (LL)
     if (balance > 1 && cmp < 0)
@@ -122,16 +122,16 @@ NodoAVL* insertarAVL(NodoAVL* raiz, NodoCancion* nuevaCancion) {
     return raiz;
 }
 
-// --- Búsqueda AVL ---
+// --- Busqueda AVL ---
 
-// Busca un nodo por el título de la canción. Retorna el puntero a NodoCancion o NULL.
+// Busca un nodo por el titulo de la canci0n. Retorna el puntero a NodoCancion o NULL.
 NodoCancion* buscarPorTituloAVL(NodoAVL* raiz, const char* titulo) {
     if (!raiz) return NULL;
     
     int cmp = strcmp(titulo, raiz->datosCancion->titulo);
     
     if (cmp == 0) {
-        return raiz->datosCancion; // ¡Encontrado! Devuelve los datos de la canción
+        return raiz->datosCancion; //SI se encuentra el titulo devuelve los datos de la cancion
     } else if (cmp < 0) {
         return buscarPorTituloAVL(raiz->izq, titulo);
     } else {
@@ -140,10 +140,9 @@ NodoCancion* buscarPorTituloAVL(NodoAVL* raiz, const char* titulo) {
 }
 
 // --- Liberar Memoria ---
-
 void liberarAVL(NodoAVL* raiz) {
     if (raiz) {
-        // NOTA: Solo liberamos el nodo AVL, los datos de la canción se liberan con la lista enlazada (freeList)
+        // NOTA: Solo liberamos el nodo AVL, los datos de la cancion se liberan con la lista enlazada (freeList)
         liberarAVL(raiz->izq);
         liberarAVL(raiz->der);
         free(raiz);

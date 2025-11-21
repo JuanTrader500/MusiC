@@ -18,7 +18,6 @@
 #include "arbolavl.h"   // <--- IMPORTANTE: Necesario para insertarAVL y raizAVL
 
 #define DELIMITADOR ";"
-
 //function (estatica para que sea privada de este archivo)
 static int parse_csv_line(char *line, char *id, char *titulo, char *ruta, char *genero) {
     char *token;
@@ -84,7 +83,8 @@ void load_data_from_csv(const char* filename) {
         calificacion_val = parse_csv_line(line, id_str, titulo_str, ruta_str, genero_str);
 
         if (calificacion_val != -1) {
-            // 1. Insertar en la Lista Enlazada (Esto ya lo tenías)
+        	
+            //Insertar en la Lista Enlazada
             insertEnd(id_str, titulo_str, ruta_str, genero_str, calificacion_val);
             
             // Esta linea de codigo es muy importante ya que nos permite añador los nodos a nuestro arbol AVL

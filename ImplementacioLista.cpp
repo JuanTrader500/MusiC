@@ -38,20 +38,20 @@ void insertEnd(const char* id, const char* titulo, const char* ruta, const char*
     if (head == NULL) { 
         head = tail = newNode;
         
-        // CAMBIO CLAVE 1: Apuntar a sí mismo para cerrar el círculo inicial
+        //Apuntar a si mismo para cerrar el círculo inicial
         head->next = head;
         head->prev = head;
     } else {
-        // Enlace estándar doble
+        // Enlace estandar doble
         tail->next = newNode;
         newNode->prev = tail;
         
-        // Actualizamos la cola
+        //Actualizamos la cola
         tail = newNode;        
         
-        // CAMBIO CLAVE 2: Cerrar el círculo (la magia ocurre aquí)
-        tail->next = head; // El siguiente del último es el primero
-        head->prev = tail; // El previo del primero es el último
+        //Cerrar el círculo  de nuestra lista circular doble mente enlazada
+        tail->next = head; // El siguiente del ultimo es el primero
+        head->prev = tail; // El previo del primero es el ultimo
     }
 }
 
@@ -73,6 +73,7 @@ void displayForward() {
     printf("--- Fin de la vuelta (regresando a Head) ---\n");
 }
 
+// Creamos la funcion para liberar memoria y que nuestro pc no explot :V
 void freeList() {
     if (head == NULL) return;
 

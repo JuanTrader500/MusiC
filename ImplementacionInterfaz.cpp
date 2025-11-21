@@ -9,28 +9,6 @@
 #include <time.h>   // Para time()
 #include "arbolavl.h"
 
-// Función auxiliar
-void reproducirPorID(const char* idBusqueda) {
-    NodoCancion* actual = head;
-    int encontrado = 0;
-
-    printf("\n🔍 Buscando cancion con ID: '%s'...\n", idBusqueda);
-
-    while (actual != NULL) {
-        if (strcmp(actual->id, idBusqueda) == 0) {
-            printf("✅ ¡Cancion encontrada!: %s\n", actual->titulo);
-            reproducirMusica(actual->ruta);
-            encontrado = 1;
-            break;
-        }
-        actual = actual->next;
-    }
-
-    if (encontrado == 0) {
-        printf("❌ No se encontro ID: %s\n", idBusqueda);
-    }
-}
-
 //La funcion que llamaremos en el caso 2 Switch: reproducir musica
 void menuReproduccion() {
     if (head == NULL) {
@@ -163,8 +141,6 @@ void menuReproduccionAleatoria() {
     // Bucle de interaccion (El mismo de arriba)
     do {
         system("cls");  
-        system("cls"); 
-        
         
         printf("\n========================================\n");
         printf("        REPRODUCTOR DE MUSICA         \n");
@@ -186,7 +162,7 @@ void menuReproduccionAleatoria() {
 
         if (tecla == 224) {
             tecla = _getch(); 
-            // Lógica para ir a la siguiente/anterior canción en la lista
+            // Logica para ir a la siguiente/anterior cancion en la lista
             switch (tecla) {
                 case 77: // Derecha (Siguiente en la lista)
                     if (actual && actual->next != NULL) {
@@ -208,8 +184,8 @@ void menuReproduccionAleatoria() {
                     break;
             }
         }
-        else if (tecla == 48) { // salimos con el 0 
-            Mix_HaltMusic(); // Detiene la reproducción
+        else if (tecla == 48) { //salimos con el 0 
+            Mix_HaltMusic(); //Detiene la reproduccion
             seguir = 0;
         }
     } while (seguir != 0);
@@ -255,8 +231,6 @@ void buscarYReproducirPorTitulo() {
         	// Bucle de interaccion (El mismo de arriba)
 		    do {
 		        system("cls");  
-		        system("cls"); 
-		        
 		        
 		        printf("\nCANCION ENCONTRADA!\n");
 		            printf("--------------------------------\n");
