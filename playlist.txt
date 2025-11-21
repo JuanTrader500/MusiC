@@ -1,0 +1,51 @@
+ID;Titulo;Ruta_Archivo;Genero;Calificacion
+001;2 Be High;C:\Users\juana\Videos\SimpleMP3\2 Be High.mp3;Techno;8
+002;141 Schneeschieber (Slowed Version);C:\Users\juana\Videos\SimpleMP3\141 Schneeschieber (Slowed Version).mp3;Hardtekk;9
+003;Activision;C:\Users\juana\Videos\SimpleMP3\Activision.mp3;Hard Techno;7
+004;Blade;C:\Users\juana\Videos\SimpleMP3\Blade.mp3;Techno;8
+005;BLESSED MANE - Death Is No More;C:\Users\juana\Videos\SimpleMP3\BLESSED MANE - Death Is No More.mp3;Phonk;9
+006;Brutalismus 3000 - 9mm (Official Video);C:\Users\juana\Videos\SimpleMP3\Brutalismus 3000 - 9mm (Official Video).mp3;Nu-Gabber;10
+007;Bungelgrave;C:\Users\juana\Videos\SimpleMP3\Bungelgrave.mp3;Hardstyle;7
+008;CLUB BIZARRE (SLOWED HARDTEKK);C:\Users\juana\Videos\SimpleMP3\CLUB BIZARRE (SLOWED HARDTEKK).mp3;Hardtekk;8
+009;Coone - 4 BY 4 BEATS (I Don't Care) (Official Hardstyle Video);C:\Users\juana\Videos\SimpleMP3\Coone - 4 BY 4 BEATS (I Don't Care) (Official Hardstyle Video).mp3;Hardstyle;10
+010;DISCOFEVER;C:\Users\juana\Videos\SimpleMP3\DISCOFEVER.mp3;Hard House;8
+011;Doomsday (Original Mix);C:\Users\juana\Videos\SimpleMP3\Doomsday (Original Mix).mp3;Hardstyle;9
+012;Fata Morgana Techno;C:\Users\juana\Videos\SimpleMP3\Fata Morgana Techno.mp3;Techno;7
+013;Follow Me (Nobody Listens To Techno) (Anderex Remix);C:\Users\juana\Videos\SimpleMP3\Follow Me (Nobody Listens To Techno) (Anderex Remix).mp3;Rawstyle;10
+014;GET THE FUCK OUT;C:\Users\juana\Videos\SimpleMP3\GET THE FUCK OUT.mp3;Hardcore;9
+015;gladde visstick;C:\Users\juana\Videos\SimpleMP3\gladde visstick.mp3;Hard House;8
+016;GRANATA;C:\Users\juana\Videos\SimpleMP3\GRANATA.mp3;Hard Techno;9
+017;GRENADE KICK SZN;C:\Users\juana\Videos\SimpleMP3\GRENADE KICK SZN.mp3;Rawstyle;8
+018;Heroine;C:\Users\juana\Videos\SimpleMP3\Heroine.mp3;Hardtekk;7
+019;Hippie (Rework);C:\Users\juana\Videos\SimpleMP3\Hippie (Rework).mp3;Hard Techno;8
+020;Hou Vast;C:\Users\juana\Videos\SimpleMP3\Hou Vast.mp3;Hardstyle;9
+021;HOUSEGABBER;C:\Users\juana\Videos\SimpleMP3\HOUSEGABBER.mp3;Gabber;10
+022;I AM CHAOS;C:\Users\juana\Videos\SimpleMP3\I AM CHAOS.mp3;Hardcore;9
+023;KICK THE NATION;C:\Users\juana\Videos\SimpleMP3\KICK THE NATION.mp3;Hardstyle;8
+024;Killshot & The Straikerz - Here We Go Again;C:\Users\juana\Videos\SimpleMP3\Killshot & The Straikerz - Here We Go Again.mp3;Rawstyle;9
+025;Kino Der Toten;C:\Users\juana\Videos\SimpleMP3\Kino Der Toten.mp3;Hard Techno;10
+026;Lekkere Boterham;C:\Users\juana\Videos\SimpleMP3\Lekkere Boterham.mp3;Hard House;7
+027;Like A Baka (Hard Techno Remix);C:\Users\juana\Videos\SimpleMP3\Like A Baka (Hard Techno Remix).mp3;Hard Techno;8
+028;Luminite - Bass Criminal (Adjuzt Remix);C:\Users\juana\Videos\SimpleMP3\Luminite - Bass Criminal (Adjuzt Remix).mp3;Rawstyle;9
+029;Mach Gabber aus;C:\Users\juana\Videos\SimpleMP3\Mach Gabber aus.mp3;Gabber;10
+030;MAKE ME WET;C:\Users\juana\Videos\SimpleMP3\MAKE ME WET.mp3;Hard Techno;9
+031;Miguel Angeles Protection Charm (Slow & Hard Version);C:\Users\juana\Videos\SimpleMP3\Miguel Angeles Protection Charm (Slow & Hard Version).mp3;Hard Techno;8
+032;Mutilator - Psychedelics [Extended Mix];C:\Users\juana\Videos\SimpleMP3\Mutilator - Psychedelics [Extended Mix].mp3;Rawstyle;10
+033;Oksel F;C:\Users\juana\Videos\SimpleMP3\Oksel F.mp3;Hard House;7
+034;RAVEGENERATOR;C:\Users\juana\Videos\SimpleMP3\RAVEGENERATOR.mp3;Hard Techno;9
+035;Romantika;C:\Users\juana\Videos\SimpleMP3\Romantika.mp3;Hardstyle;8
+036;Samen Naar De Aldi (Offensief Remix);C:\Users\juana\Videos\SimpleMP3\Samen Naar De Aldi (Offensief Remix).mp3;Uptempo;9
+037;Samson & Ket (Vieze Asbak Remix);C:\Users\juana\Videos\SimpleMP3\Samson & Ket (Vieze Asbak Remix).mp3;Hard Techno;10
+038;SHMONEY;C:\Users\juana\Videos\SimpleMP3\SHMONEY.mp3;Phonk;7
+039;SLUSH ANTHEM;C:\Users\juana\Videos\SimpleMP3\SLUSH ANTHEM.mp3;Hardstyle;10
+040;Smakker Techno;C:\Users\juana\Videos\SimpleMP3\Smakker Techno.mp3;Techno;8
+041;Sour Milk;C:\Users\juana\Videos\SimpleMP3\Sour Milk.mp3;Hard Techno;9
+042;STAB;C:\Users\juana\Videos\SimpleMP3\STAB.mp3;Hard Techno;9
+043;The Last Airbender (VIP);C:\Users\juana\Videos\SimpleMP3\The Last Airbender (VIP).mp3;Hardstyle;10
+044;Victory Techno;C:\Users\juana\Videos\SimpleMP3\Victory Techno.mp3;Techno;7
+045;VIEZE ASBAK & KRUELTY - BLOW IT UP | OFFICIAL VIDEOCLIP;C:\Users\juana\Videos\SimpleMP3\VIEZE ASBAK & KRUELTY - BLOW IT UP | OFFICIAL VIDEOCLIP.mp3;Industrial Raw;10
+046;Vlinder Vos - Op Dreef;C:\Users\juana\Videos\SimpleMP3\Vlinder Vos - Op Dreef.mp3;Hardstyle;8
+047;Vlinderen;C:\Users\juana\Videos\SimpleMP3\Vlinderen.mp3;Hardstyle;8
+048;WAR;C:\Users\juana\Videos\SimpleMP3\WAR.mp3;Rawstyle;9
+049;You Make Me Horny;C:\Users\juana\Videos\SimpleMP3\You Make Me Horny.mp3;Hard Techno;9
+050;Zwitserse Jodel;C:\Users\juana\Videos\SimpleMP3\Zwitserse Jodel.mp3;Hardstyle;8

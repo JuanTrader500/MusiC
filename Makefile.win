@@ -1,0 +1,51 @@
+# Project: Project1
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = Project1_private.res
+OBJ      = Nada.o ImplementacioLista.o ImplementacionArchivo.o ImplementacionInterfaz.o ImplementacionAudio.o Main.o ImplementacionAVL.o $(RES)
+LINKOBJ  = Nada.o ImplementacioLista.o ImplementacionArchivo.o ImplementacionInterfaz.o ImplementacionAudio.o Main.o ImplementacionAVL.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -L"C:/Users/juana/OneDrive/Escritorio/FinalProyectDataEstructure/librerias/lib" -lmingw32 -lSDL2main -lSDL2 -lSDL2_mixer -g3
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Users/juana/OneDrive/Escritorio/FinalProyectDataEstructure/librerias/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"C:/Users/juana/OneDrive/Escritorio/FinalProyectDataEstructure/librerias/include"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\DevCpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Nada.o: Nada.cpp
+	$(CPP) -c Nada.cpp -o Nada.o $(CXXFLAGS)
+
+ImplementacioLista.o: ImplementacioLista.cpp
+	$(CPP) -c ImplementacioLista.cpp -o ImplementacioLista.o $(CXXFLAGS)
+
+ImplementacionArchivo.o: ImplementacionArchivo.cpp
+	$(CPP) -c ImplementacionArchivo.cpp -o ImplementacionArchivo.o $(CXXFLAGS)
+
+ImplementacionInterfaz.o: ImplementacionInterfaz.cpp
+	$(CPP) -c ImplementacionInterfaz.cpp -o ImplementacionInterfaz.o $(CXXFLAGS)
+
+ImplementacionAudio.o: ImplementacionAudio.cpp
+	$(CPP) -c ImplementacionAudio.cpp -o ImplementacionAudio.o $(CXXFLAGS)
+
+Main.o: Main.cpp
+	$(CPP) -c Main.cpp -o Main.o $(CXXFLAGS)
+
+ImplementacionAVL.o: ImplementacionAVL.cpp
+	$(CPP) -c ImplementacionAVL.cpp -o ImplementacionAVL.o $(CXXFLAGS)
+
+Project1_private.res: Project1_private.rc 
+	$(WINDRES) -i Project1_private.rc --input-format=rc -o Project1_private.res -O coff 
+
