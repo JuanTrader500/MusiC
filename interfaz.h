@@ -7,5 +7,6 @@ void reproducirPorID(const char* idBusqueda);
 void inicializar_aleatorio();
 void menuReproduccionAleatoria();
 void buscarYReproducirPorTitulo();
+void menuRecomendaciones();
 
 #endif
