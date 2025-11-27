@@ -2,12 +2,59 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <string.h>
+#include <vector>
 #include "interfaz.h"
 #include "lista.h"
 #include "audio.h"
 #include <stdlib.h> // Para rand(), srand() 
 #include <time.h>   // Para time()
 #include "arbolavl.h"
+#include "interfaz.h"
+
+//Menu para pageRank que contiene las interaciones desde 1000 al 10000
+void menuRecomendaciones() {
+    Recomendador rec;
+    int opcion = 0;
+    int interacciones = 1000;
+    rec.cargarCancionesDesdeLista(); 
+
+    do {
+        system("cls");
+        printf("   SISTEMA DE RECOMENDACION (PageRank)\n");
+        printf("========================================\n");
+        printf("1. Simular 1,000 interacciones\n");
+        printf("2. Simular 2,000 interacciones\n");
+        printf("3. Simular 5,000 interacciones\n");
+        printf("4. Simular 10,000 interacciones\n");
+        printf("0. Volver al menu principal\n");
+        printf("========================================\n");
+        printf("> Seleccione cantidad de interacciones: ");
+        if (scanf("%d", &opcion) != 1) { 
+             while(getchar() != '\n');
+             continue; 
+        }
+        switch(opcion) {
+            case 1: interacciones = 1000; break;
+            case 2: interacciones = 2000; break;
+            case 3: interacciones = 5000; break;
+            case 4: interacciones = 10000; break;
+            case 0: return;
+            default: printf("Opcion no valida.\n"); continue;
+        }
+        if (opcion != 0) {
+            printf("\nGenerando grafo y calculando...\n");          
+            // Generar nuevas interacciones
+            rec.generarGrafoInteracciones(interacciones);
+            // Ejecutar algoritmo (damping 0.85 es estándar)
+            std::vector<double> scores = rec.ejecutarPageRank(0.85, 100); // 100 iteraciones es suficiente
+            // Mostrar Top 10
+            rec.mostrarTop(10, scores);
+            printf("\nPresione cualquier tecla para continuar...");
+            _getch();
+        }
+
+    } while (opcion != 0);
+}
 
 //La funcion que llamaremos en el caso 2 Switch: reproducir musica
 void menuReproduccion() {
@@ -25,9 +72,7 @@ void menuReproduccion() {
 	
 	
     do {
-        system("cls"); 
-        
-        
+        system("cls");
         printf("\n========================================\n");
         printf("        REPRODUCTOR DE MUSICA         \n");
         printf("========================================\n");
@@ -42,9 +87,7 @@ void menuReproduccion() {
         printf("[ <- ] Cancion Anterior\n");
         printf("[  0 ] Salir al Menu Principal\n");
         printf("========================================\n");
-
         tecla = _getch();
-
         if (tecla == 224) {
             tecla = _getch(); 
 
@@ -77,7 +120,6 @@ void menuReproduccion() {
         }
     }while (seguir!=0);
 }
-
 // Inicializa el generador de numeros aleatorios una vez
 void inicializar_aleatorio() {
     srand(time(NULL));
