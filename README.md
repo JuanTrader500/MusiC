@@ -18,7 +18,31 @@ MusiC es una aplicación de consola que permite gestionar listas de reproducció
 * **IDE Recomendado:** Dev-C++ 
 * **Sistema Operativo:** Windows
 
+##  Estructura del Proyecto
 
+El código está organizado de forma modular, separando la lógica de las estructuras de datos, la interfaz y la gestión de archivos.
+
+### Archivos Principales
+* **`Main.cpp`**: Punto de entrada de la aplicación. Contiene el menú principal (`switch`) y la lógica de control del flujo del programa.
+* **`Project1.dev`**: Archivo de configuración del proyecto para Dev-C++.
+
+### Módulos y Componentes
+El proyecto se divide en módulos, cada uno con su archivo de cabecera (`.h`) y su implementación (`.cpp`):
+
+* **Audio (`audio.h` / `ImplementacionAudio.cpp`)**:
+    * Encargado de la reproducción de música e interacción con los botones/controles.
+* **Listas (`lista.h` / `ImplementacionLista.cpp`)**:
+    * Implementación de la Lista Circular para el manejo de la cola de reproducción.
+* **Árbol AVL (`arbolavl.h` / `ImplementacionAVL.cpp`)**:
+    * Estructura de árbol binario de búsqueda equilibrado (AVL) para búsquedas rápidas por título.
+* **Recomendador (`recomendador.h` / `ImplementacionRecomendador.cpp`)**:
+    * Lógica para el sistema de recomendaciones de canciones.
+* **Interfaz (`interfaz.h` / `ImplementacionInterfaz.cpp`)**:
+    * Manejo de los menús visuales y la estética de la consola.
+* **Archivos (`archivo.h` / `ImplementacionArchivo.cpp`)**:
+    * Gestión de lectura y escritura de datos para guardar/cargar las canciones y playlists.
+
+---
 ## Instalación y Ejecución
 
 ### Prerrequisitos
